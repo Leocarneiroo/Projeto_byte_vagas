@@ -11,7 +11,10 @@ export default function Home() {
       <div className="absolute right-0 top-1/2 h-[288px] w-[526px] bg-purple-500 opacity-50 -translate-y-1/2 translate-x-1/2 rounded-full blur-full" />
       
       {/*Sing in button*/}
-      <a href="" className="flex items-center gap-3 text-left hover:text-gray-50 transition-colors">
+      <a 
+        href={'https://github.com/login/oauth/authorize?cliente_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}'} 
+        className="flex items-center gap-3 text-left hover:text-gray-50 transition-colors"
+      >
         
         {/*Ícone de usuário*/}
         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100">
