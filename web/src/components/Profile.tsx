@@ -13,7 +13,7 @@ export function Profile() {
         {/* Create account text */}
         <p className="max-w-[140px] text-sm leading-snug">
           {name}
-          <a href="" className="block text-red-300 hover:text-red-600">
+          <a href="/api/auth/logout" className="block text-red-300 hover:text-red-600">
             Quero sair
           </a>
         </p>
