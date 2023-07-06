@@ -1,5 +1,6 @@
 import Image from "next/image"
 import coracao from '../assets/coracao.svg'
+import Link from "next/link";
 
 
 export function TitleSection () {
@@ -20,12 +21,12 @@ export function TitleSection () {
                 </p>
         
                 {/* Curriculum registration button */}
-                <a
+                <Link
                   className="inline-block rounded-full bg-green-400 px-5 py-3 font-alt text-sm leading-none uppercase text-black hover:bg-green-600"
-                  href=""
+                  href="/memories/new"
                 >
                   CADASTRAR CURRICULUM
-                </a>
+                </Link>
             </div>
         </div>
     );
